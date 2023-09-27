@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "414198840212",
+    "firebase_url": "https://monte-mirage-default-rtdb.firebaseio.com",
+    "project_id": "monte-mirage",
+    "storage_bucket": "monte-mirage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414198840212:android:33b408f9058bc1dfe8ad81",
+        "android_client_info": {
+          "package_name": "com.example.montemirage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVrmE6rpimj39DJ4-1aj4JGesQOI5D1aQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

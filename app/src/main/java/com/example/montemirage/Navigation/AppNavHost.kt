@@ -6,13 +6,13 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.montemirage.ui.theme.Pages.About.AboutScreen
-import com.example.montemirage.ui.theme.Pages.Home.HomeScreen
-import com.example.montemirage.ui.theme.Pages.Login.LoginScreen
-import com.example.montemirage.ui.theme.Pages.Products.AddProductsScreen
-import com.example.montemirage.ui.theme.Pages.Products.UpdateProductsScreen
-import com.example.montemirage.ui.theme.Pages.Products.ViewProductsScreen
-import com.example.montemirage.ui.theme.Pages.Signup.SignupScreen
+import com.example.Montemirage.ui.theme.pages.Signup.SignupScreen
+import com.example.montemirage.ui.theme.pages.Login.LoginScreen
+import com.example.montemirage.ui.theme.pages.Products.AddProductsScreen
+import com.example.montemirage.ui.theme.pages.Products.UpdateProductsScreen
+import com.example.montemirage.ui.theme.pages.Products.ViewProductsScreen
+import com.example.montemirage.ui.theme.pages.about.AboutScreen
+import com.example.montemirage.ui.theme.pages.home.HomeScreen
 
 @Composable
 fun AppNavHost (modifier: Modifier = Modifier,
@@ -47,7 +47,10 @@ fun AppNavHost (modifier: Modifier = Modifier,
         composable(ROUTE_UPDATE_PRODUCTS + "/id") { passedData ->
             UpdateProductsScreen(navController, passedData.arguments?.getString("id")!!)
         }
+        composable(ROUTE_PROFILE) {
+            ViewProductsScreen(navController)
 
 
+        }
     }
 }

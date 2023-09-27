@@ -1,9 +1,10 @@
-package com.example.montemirage.ui.theme
+package com.example.Montemirage.ui.theme
 
 import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.MaterialTheme.typography
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
@@ -14,6 +15,12 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
+import com.example.montemirage.ui.theme.Pink40
+import com.example.montemirage.ui.theme.Pink80
+import com.example.montemirage.ui.theme.Purple40
+import com.example.montemirage.ui.theme.Purple80
+import com.example.montemirage.ui.theme.PurpleGrey40
+import com.example.montemirage.ui.theme.PurpleGrey80
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -64,7 +71,7 @@ fun MonteMirageTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = typography,
         content = content
     )
 }

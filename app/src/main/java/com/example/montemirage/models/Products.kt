@@ -1,7 +1,6 @@
-package com.example.montemirage.Models
+package com.example.montemirage.models
 
-class Products {
-    var name:String = ""
+class Products {var name:String = ""
     var quantity:String = ""
     var price:String = ""
     var id:String = ""
@@ -13,4 +12,5 @@ class Products {
         this.id = id
     }
     constructor()
+
 }
